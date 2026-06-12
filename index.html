@@ -3,100 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>k1y0mi — backend &amp; fullstack developer</title>
+<title>k1y0mi — Maxim Chumakov · backend & fullstack developer</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0c0b'/%3E%3Ctext x='15' y='23' font-size='20' text-anchor='middle' fill='%23c6f24e' font-family='monospace'%3E&gt;%3C/text%3E%3C/svg%3E">
-<meta name="description" content="k1y0mi — backend developer (Python / Django), fullstack for the past year. Also AI/ML, LLM tooling and systems. Python, JavaScript, C++, Shell. Open to opportunities.">
-<meta property="og:title" content="k1y0mi — backend & fullstack developer">
+<meta name="description" content="Maxim Chumakov (k1y0mi) — backend developer (Python / Django), fullstack for the past year. AI/ML, LLM tooling and systems. Open to opportunities.">
+<meta property="og:title" content="k1y0mi — Maxim Chumakov · backend & fullstack developer">
 <meta property="og:description" content="Backend (Python / Django), fullstack in practice. AI/ML, LLM tooling & systems on the side. Open to opportunities.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://k1y0miiii.github.io">
 <meta name="theme-color" content="#0a0c0b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=2">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Maxim Chumakov","alternateName":"k1y0mi","url":"https://k1y0miiii.github.io","email":"mailto:chumakov.mr@gmail.com","jobTitle":"Backend & Fullstack Developer","knowsAbout":["Python","Django","JavaScript","C++","Machine Learning","LLM tooling"],"sameAs":["https://github.com/k1y0miiii","https://t.me/k1y0miiii"]}
+</script>
 </head>
 <body>
+
+<canvas id="field" aria-hidden="true"></canvas>
 <div class="grain" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- context-window HUD -->
+<div class="hud" id="hud" aria-hidden="true">
+  <span class="hud-lbl">ctx</span>
+  <span class="hud-bar"><span class="hud-fill" id="hudFill"></span></span>
+  <span class="hud-pct" id="hudPct">0%</span>
+  <span class="hud-tok" id="hudTok">0 tok</span>
+</div>
 
 <header class="nav">
   <a class="brand" href="#top">k1y0mi<span>/dev</span></a>
   <nav class="nav-links">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#work">Work</a>
-    <a href="#contact">Contact</a>
+    <a href="#about" data-i18n="nav_about">About</a>
+    <a href="#skills" data-i18n="nav_skills">Skills</a>
+    <a href="#work" data-i18n="nav_work">Work</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
     <a href="https://github.com/k1y0miiii" target="_blank" rel="noopener">GitHub ↗</a>
   </nav>
+  <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+    <span data-lang-opt="en" class="on">EN</span><i>/</i><span data-lang-opt="ru">RU</span>
+  </button>
 </header>
 
 <main id="top">
 
   <!-- HERO -->
   <section class="hero">
-    <p class="status reveal"><span class="dot"></span> Open to opportunities</p>
-    <h1 class="reveal">Backend developer<br>who went <span class="hl">fullstack.</span></h1>
-    <p class="lede reveal">I'm <b>k1y0mi</b>. Python and <b>Django</b> are home base — APIs, data and
-      business logic. Over the past year I've worked <b>fullstack</b>, owning features end to end,
-      UI included. On the side I build ML models, LLM tooling and systems software — and I like
-      shipping results I can measure.</p>
+    <p class="term-line reveal"><span class="term-prompt">~ $</span> <span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+
+    <h1 class="reveal">
+      <span class="h1-row" data-i18n="hero_l1">Backend developer</span><br>
+      <span class="h1-row h1-accent"><span data-i18n="hero_l2">who went</span> <span class="hl glitch" data-text="fullstack." data-i18n="hero_hl">fullstack.</span></span>
+    </h1>
+
+    <p class="lede reveal" data-i18n="hero_lede">I'm <b>Maxim Chumakov</b> — <b>k1y0mi</b> on the internet. Python and <b>Django</b> are home base: APIs, data, business logic. Over the past year I've worked <b>fullstack</b>, owning features end to end, UI included. On the side I build ML models, LLM tooling and systems software — and I like shipping results I can measure.</p>
 
     <div class="hero-cta reveal">
-      <a class="btn btn-primary" href="mailto:chumakov.mr@gmail.com">Get in touch</a>
-      <a class="btn" href="#work">See the work ↓</a>
-      <a class="btn" href="https://github.com/k1y0miiii" target="_blank" rel="noopener">Full profile ↗</a>
+      <a class="btn btn-primary" href="mailto:chumakov.mr@gmail.com" data-i18n="cta_touch">Get in touch</a>
+      <a class="btn" href="#work" data-i18n="cta_work">See the work ↓</a>
+      <a class="btn" href="https://github.com/k1y0miiii" target="_blank" rel="noopener" data-i18n="cta_gh">Full profile ↗</a>
     </div>
 
     <div class="signals reveal">
       <div class="sig">
         <span class="sig-num">~<span data-countup="1" data-suffix=" yr">0</span></span>
-        <span class="sig-lbl">fullstack, end to end</span>
+        <span class="sig-lbl" data-i18n="sig_1">fullstack, end to end</span>
       </div>
       <div class="sig">
         <span class="sig-num"><span data-countup="11">0</span></span>
-        <span class="sig-lbl">public projects shipped</span>
+        <span class="sig-lbl" data-i18n="sig_2">public projects shipped</span>
       </div>
       <div class="sig">
         <span class="sig-num"><span data-countup="33" data-prefix="−" data-suffix="%">0</span></span>
-        <span class="sig-lbl">tokens cut (JTF)</span>
+        <span class="sig-lbl" data-i18n="sig_3">tokens cut (JTF)</span>
+      </div>
+      <div class="sig">
+        <span class="sig-num"><span data-countup="8" data-suffix="×">0</span></span>
+        <span class="sig-lbl" data-i18n="sig_4">cheaper web lookups (MCP)</span>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>PYTHON</span><i>▪</i><span>DJANGO</span><i>▪</i><span>FASTAPI</span><i>▪</i><span>POSTGRESQL</span><i>▪</i><span>PYTORCH</span><i>▪</i><span>TRANSFORMERS</span><i>▪</i><span>RUST</span><i>▪</i><span>C++</span><i>▪</i><span>DOCKER</span><i>▪</i><span>LINUX</span><i>▪</i><span>MCP</span><i>▪</i><span>LLM&nbsp;TOOLING</span><i>▪</i>
+      <span>PYTHON</span><i>▪</i><span>DJANGO</span><i>▪</i><span>FASTAPI</span><i>▪</i><span>POSTGRESQL</span><i>▪</i><span>PYTORCH</span><i>▪</i><span>TRANSFORMERS</span><i>▪</i><span>RUST</span><i>▪</i><span>C++</span><i>▪</i><span>DOCKER</span><i>▪</i><span>LINUX</span><i>▪</i><span>MCP</span><i>▪</i><span>LLM&nbsp;TOOLING</span><i>▪</i>
+    </div>
+  </div>
+
+  <!-- ABOUT : bento -->
   <section id="about" class="block">
     <div class="block-head">
-      <span class="kicker">01 — about me</span>
-      <h2>What I do</h2>
-      <p class="block-lede">Backend is my core — Python and Django — and this past year I've gone
-        fullstack, shipping features from the database to the screen. Around that, I take on hard,
-        measurable problems: ML models, LLM-efficiency tooling and systems software.</p>
+      <span class="kicker"><i>❯</i> <span data-i18n="k_about">about</span> — 01</span>
+      <h2 data-i18n="h_about">What I do</h2>
+      <p class="block-lede" data-i18n="lede_about">Backend is my core — Python and Django — and this past year I've gone fullstack, shipping features from the database to the screen. Around that, I take on hard, measurable problems: ML models, LLM-efficiency tooling and systems software.</p>
     </div>
 
-    <div class="cap-grid">
-      <div class="cap-card primary reveal">
+    <div class="bento">
+      <div class="b-card b-main reveal">
         <span class="cap-ic tag-llm">▤</span>
-        <h3>Backend &amp; fullstack</h3>
-        <p>My day-to-day: <b>Python / Django</b> — REST APIs, data models, business logic, auth.
-          For the last year, fullstack too — owning features end to end, frontend included.</p>
+        <h3 data-i18n="cap1_h">Backend &amp; fullstack</h3>
+        <p data-i18n="cap1_p">My day-to-day: <b>Python / Django</b> — REST APIs, data models, business logic, auth. For the last year, fullstack too — owning features end to end, frontend included.</p>
+        <pre class="b-code" aria-hidden="true"><code><span class="c-kw">class</span> <span class="c-fn">Feature</span>(models.Model):
+    owner   = <span class="c-str">"end to end"</span>
+    db      = <span class="c-str">"postgres"</span>
+    ui      = <span class="c-kw">True</span>  <span class="c-cm"># since 2025</span></code></pre>
       </div>
-      <div class="cap-card reveal">
+
+      <div class="b-card reveal">
         <span class="cap-ic tag-aiml">◐</span>
-        <h3>AI / ML</h3>
-        <p>Classifiers and detectors — fine-tuned transformers and classic ML, calibrated and
-          honestly evaluated on hard test splits.</p>
+        <h3 data-i18n="cap2_h">AI / ML</h3>
+        <p data-i18n="cap2_p">Classifiers and detectors — fine-tuned transformers and classic ML, calibrated and honestly evaluated on hard test splits.</p>
       </div>
-      <div class="cap-card reveal">
+
+      <div class="b-card reveal">
         <span class="cap-ic tag-sys">⌗</span>
-        <h3>LLM tooling</h3>
-        <p>Formats, skills and MCP servers that cut token cost for agents — lossless,
-          round-trippable, measured with tiktoken.</p>
+        <h3 data-i18n="cap3_h">LLM tooling</h3>
+        <p data-i18n="cap3_p">Formats, skills and MCP servers that cut token cost for agents — lossless, round-trippable, measured with tiktoken.</p>
       </div>
-      <div class="cap-card reveal">
+
+      <div class="b-card reveal">
         <span class="cap-ic tag-sec">⛨</span>
-        <h3>Systems &amp; security</h3>
-        <p>Lower-level work too: a terminal web browser, CLI tools, an encrypted messenger,
-          intrusion detection and BadUSB tooling.</p>
+        <h3 data-i18n="cap4_h">Systems &amp; security</h3>
+        <p data-i18n="cap4_p">Lower-level work too: a terminal web browser, CLI tools, an encrypted messenger, intrusion detection and BadUSB tooling.</p>
+      </div>
+
+      <div class="b-card b-stats reveal" aria-label="key metrics">
+        <div class="b-stat"><b>FPR ≤ 3%</b><span data-i18n="bs_1">calibrated detector</span></div>
+        <div class="b-stat"><b>−33%</b><span data-i18n="bs_2">tokens vs JSON</span></div>
+        <div class="b-stat"><b>8×</b><span data-i18n="bs_3">fewer tokens / lookup</span></div>
       </div>
     </div>
   </section>
@@ -104,8 +142,8 @@
   <!-- SKILLS -->
   <section id="skills" class="block alt">
     <div class="block-head">
-      <span class="kicker">02 — toolbox</span>
-      <h2>Languages &amp; stack</h2>
+      <span class="kicker"><i>❯</i> <span data-i18n="k_skills">toolbox</span> — 02</span>
+      <h2 data-i18n="h_skills">Languages &amp; stack</h2>
     </div>
 
     <div class="lang-row">
@@ -122,14 +160,14 @@
       </div>
       <div class="stack-card reveal">
         <h3>Frontend</h3>
-        <ul class="chips"><li>Django templates</li><li>HTML</li><li>CSS</li></ul>
+        <ul class="chips"><li>Django templates</li><li>HTML</li><li>CSS</li><li>vanilla JS</li></ul>
       </div>
       <div class="stack-card reveal">
         <h3>AI / ML</h3>
         <ul class="chips"><li>PyTorch</li><li>transformers</li><li>scikit-learn</li></ul>
       </div>
       <div class="stack-card reveal">
-        <h3>Infra &amp; tooling</h3>
+        <h3 data-i18n="stack_infra">Infra &amp; tooling</h3>
         <ul class="chips"><li>Docker</li><li>Git</li><li>Linux</li><li>CLI / TUI</li></ul>
       </div>
     </div>
@@ -138,19 +176,18 @@
   <!-- WORK -->
   <section id="work" class="block">
     <div class="block-head">
-      <span class="kicker">03 — proof</span>
-      <h2>Selected work</h2>
-      <p class="block-lede">A sample of what I've built, as evidence for the above. Filter by domain —
-        everything links to source. <a class="inline-link" href="https://github.com/k1y0miiii" target="_blank" rel="noopener">Full list on GitHub →</a></p>
+      <span class="kicker"><i>❯</i> <span data-i18n="k_work">proof</span> — 03</span>
+      <h2 data-i18n="h_work">Selected work</h2>
+      <p class="block-lede" data-i18n="lede_work">A sample of what I've built, as evidence for the above. Filter by domain — everything links to source. <a class="inline-link" href="https://github.com/k1y0miiii" target="_blank" rel="noopener">Full list on GitHub →</a></p>
     </div>
 
     <div class="filters" id="filters" role="tablist">
-      <button class="filt active" data-cat="all" role="tab">All</button>
+      <button class="filt active" data-cat="all" role="tab" data-i18n="f_all">All</button>
       <button class="filt" data-cat="aiml" role="tab">AI/ML</button>
-      <button class="filt" data-cat="llm" role="tab">LLM tooling</button>
-      <button class="filt" data-cat="sec" role="tab">Security</button>
-      <button class="filt" data-cat="sys" role="tab">Systems</button>
-      <button class="filt" data-cat="tools" role="tab">Tools</button>
+      <button class="filt" data-cat="llm" role="tab" data-i18n="f_llm">LLM tooling</button>
+      <button class="filt" data-cat="sec" role="tab" data-i18n="f_sec">Security</button>
+      <button class="filt" data-cat="sys" role="tab" data-i18n="f_sys">Systems</button>
+      <button class="filt" data-cat="tools" role="tab" data-i18n="f_tools">Tools</button>
     </div>
 
     <div class="work-grid" id="grid">
@@ -158,74 +195,63 @@
       <a class="proj feat" data-cat="aiml" href="https://github.com/k1y0miiii/ru-ai-text-detector" target="_blank" rel="noopener">
         <span class="proj-top"><span class="tag tag-aiml">AI/ML</span><span class="lang">Python · PyTorch</span></span>
         <span class="proj-name">ru-ai-text-detector</span>
-        <span class="proj-desc">Detects whether Russian text is human-written or LLM-generated.
-          Statistical features (v1) plus fine-tuned ruBert transformers (v2–v4), calibrated to
-          FPR ≤ 3%. Service / CLI / TUI, fully local.</span>
+        <span class="proj-desc" data-i18n="p_detector">Detects whether Russian text is human-written or LLM-generated. Statistical features (v1) plus fine-tuned ruBert transformers (v2–v4), calibrated to FPR ≤ 3%. Service / CLI / TUI, fully local.</span>
         <span class="proj-go">→</span>
       </a>
 
       <a class="proj feat" data-cat="sys" href="https://github.com/k1y0miiii/glyph" target="_blank" rel="noopener">
-        <span class="proj-top"><span class="tag tag-sys">Systems</span><span class="lang">Rust</span></span>
+        <span class="proj-top"><span class="tag tag-sys" data-i18n="f_sys">Systems</span><span class="lang">Rust</span></span>
         <span class="proj-name">glyph</span>
-        <span class="proj-desc">A web browser that runs in your terminal. Fetches over HTTP(S),
-          parses HTML with html5ever, applies a subset of CSS, lays it out as text. Tabs, forms,
-          session restore — no JS engine, intentionally fast.</span>
+        <span class="proj-desc" data-i18n="p_glyph">A web browser that runs in your terminal. Fetches over HTTP(S), parses HTML with html5ever, applies a subset of CSS, lays it out as text. Tabs, forms, session restore — no JS engine, intentionally fast.</span>
         <span class="proj-go">→</span>
       </a>
 
       <a class="proj" data-cat="llm" href="https://github.com/k1y0miiii/json-token-format" target="_blank" rel="noopener">
-        <span class="proj-top"><span class="tag tag-llm">LLM tooling</span><span class="lang">Python</span></span>
+        <span class="proj-top"><span class="tag tag-llm" data-i18n="f_llm">LLM tooling</span><span class="lang">Python</span></span>
         <span class="proj-name">json-token-format</span>
-        <span class="proj-desc">JTF — a lossless, compact JSON encoding for LLMs. −33% tokens vs
-          JSON, round-trippable. Builds on the TOON idea.</span>
+        <span class="proj-desc" data-i18n="p_jtf">JTF — a lossless, compact JSON encoding for LLMs. −33% tokens vs JSON, round-trippable. Builds on the TOON idea.</span>
         <span class="proj-go">→</span>
       </a>
 
       <a class="proj" data-cat="llm" href="https://github.com/k1y0miiii/glyph-mcp" target="_blank" rel="noopener">
-        <span class="proj-top"><span class="tag tag-llm">LLM tooling</span><span class="lang">JavaScript</span></span>
+        <span class="proj-top"><span class="tag tag-llm" data-i18n="f_llm">LLM tooling</span><span class="lang">JavaScript</span></span>
         <span class="proj-name">glyph-mcp</span>
-        <span class="proj-desc">MCP server giving Claude web search &amp; fetch as plain text,
-          rendered through glyph. Roughly 8× fewer tokens per lookup.</span>
+        <span class="proj-desc" data-i18n="p_gmcp">MCP server giving Claude web search &amp; fetch as plain text, rendered through glyph. Roughly 8× fewer tokens per lookup.</span>
         <span class="proj-go">→</span>
       </a>
 
       <a class="proj" data-cat="llm" href="https://github.com/k1y0miiii/json-token-skill" target="_blank" rel="noopener">
-        <span class="proj-top"><span class="tag tag-llm">LLM tooling</span><span class="lang">Python</span></span>
+        <span class="proj-top"><span class="tag tag-llm" data-i18n="f_llm">LLM tooling</span><span class="lang">Python</span></span>
         <span class="proj-name">json-token-skill</span>
-        <span class="proj-desc">Claude Code skill + PostToolUse hook: reads JSON as compact JTF
-          automatically, saving tokens. Ships a Cursor rule too.</span>
+        <span class="proj-desc" data-i18n="p_jts">Claude Code skill + PostToolUse hook: reads JSON as compact JTF automatically, saving tokens. Ships a Cursor rule too.</span>
         <span class="proj-go">→</span>
       </a>
 
       <a class="proj" data-cat="aiml" href="https://github.com/k1y0miiii/ids-nsl-kdd" target="_blank" rel="noopener">
-        <span class="proj-top"><span class="tag tag-aiml">AI/ML</span><span class="lang">Python · diploma</span></span>
+        <span class="proj-top"><span class="tag tag-aiml">AI/ML</span><span class="lang" data-i18n="l_diploma">Python · diploma</span></span>
         <span class="proj-name">ids-nsl-kdd</span>
-        <span class="proj-desc">Network intrusion detection on the NSL-KDD benchmark. RandomForest /
-          GradientBoosting / LogReg, binary &amp; multiclass, honest metrics on a hard test split.</span>
+        <span class="proj-desc" data-i18n="p_ids">Network intrusion detection on the NSL-KDD benchmark. RandomForest / GradientBoosting / LogReg, binary &amp; multiclass, honest metrics on a hard test split.</span>
         <span class="proj-go">→</span>
       </a>
 
       <a class="proj" data-cat="sec" href="https://github.com/k1y0miiii/GhostVault-Open-Source-Anonymous-Messenger" target="_blank" rel="noopener">
-        <span class="proj-top"><span class="tag tag-sec">Security</span><span class="lang">Python</span></span>
+        <span class="proj-top"><span class="tag tag-sec" data-i18n="f_sec">Security</span><span class="lang">Python</span></span>
         <span class="proj-name">GhostVault</span>
-        <span class="proj-desc">Open-source anonymous messenger: encrypted chat, shared database
-          access, desktop GUI. Built around user control over data.</span>
+        <span class="proj-desc" data-i18n="p_gv">Open-source anonymous messenger: encrypted chat, shared database access, desktop GUI. Built around user control over data.</span>
         <span class="proj-go">→</span>
       </a>
 
       <a class="proj" data-cat="sec" href="https://github.com/k1y0miiii/FlipperZero-BadUSB-Scripts" target="_blank" rel="noopener">
-        <span class="proj-top"><span class="tag tag-sec">Security</span><span class="lang">Shell · DuckyScript</span></span>
+        <span class="proj-top"><span class="tag tag-sec" data-i18n="f_sec">Security</span><span class="lang">Shell · DuckyScript</span></span>
         <span class="proj-name">FlipperZero-BadUSB-Scripts</span>
-        <span class="proj-desc">BadUSB scripts for Flipper Zero — utilities and demos for security
-          testing and automation. For legal, ethical use only.</span>
+        <span class="proj-desc" data-i18n="p_fz">BadUSB scripts for Flipper Zero — utilities and demos for security testing and automation. For legal, ethical use only.</span>
         <span class="proj-go">→</span>
       </a>
 
       <a class="proj" data-cat="tools" href="https://github.com/k1y0miiii/Fake-data-gen" target="_blank" rel="noopener">
-        <span class="proj-top"><span class="tag tag-tools">Tools</span><span class="lang">Python</span></span>
+        <span class="proj-top"><span class="tag tag-tools" data-i18n="f_tools">Tools</span><span class="lang">Python</span></span>
         <span class="proj-name">Fake-data-gen</span>
-        <span class="proj-desc">Synthetic / test-data generator built on Faker, with a multilingual
-          UI and a stylish CLI banner.</span>
+        <span class="proj-desc" data-i18n="p_fdg">Synthetic / test-data generator built on Faker, with a multilingual UI and a stylish CLI banner.</span>
         <span class="proj-go">→</span>
       </a>
 
@@ -235,12 +261,11 @@
   <!-- CONTACT -->
   <section id="contact" class="block alt contact">
     <div class="contact-inner">
-      <span class="kicker">04 — contact</span>
-      <h2>Let's talk.</h2>
-      <p class="block-lede">Open to backend and fullstack roles, and to interesting collaborations.
-        The fastest way to reach me is email or Telegram.</p>
+      <span class="kicker"><i>❯</i> <span data-i18n="k_contact">contact</span> — 04</span>
+      <h2 data-i18n="h_contact">Let's talk.</h2>
+      <p class="block-lede" data-i18n="lede_contact">Open to backend and fullstack roles, and to interesting collaborations. The fastest way to reach me is email or Telegram.</p>
       <div class="contact-links">
-        <a class="btn btn-primary" href="mailto:chumakov.mr@gmail.com">chumakov.mr@gmail.com</a>
+        <button class="btn btn-primary" id="copyMail" data-mail="chumakov.mr@gmail.com">chumakov.mr@gmail.com <span class="copy-hint" data-i18n="copy_hint">⧉ copy</span></button>
         <a class="btn" href="https://t.me/k1y0miiii" target="_blank" rel="noopener">Telegram @k1y0miiii</a>
         <a class="btn" href="https://github.com/k1y0miiii" target="_blank" rel="noopener">GitHub @k1y0miiii</a>
       </div>
@@ -250,10 +275,19 @@
 </main>
 
 <footer class="foot">
-  <span class="brand">k1y0mi</span>
-  <p>Backend &amp; fullstack developer — Python · Django · JavaScript · C++ · Shell.</p>
+  <pre class="neofetch" aria-hidden="true"><code><span class="nf-name">k1y0mi</span>@<span class="nf-name">web</span>
+─────────────
+<span class="nf-k">USER</span>    Maxim Chumakov
+<span class="nf-k">OS</span>      GitHub Pages
+<span class="nf-k">SHELL</span>   vanilla js · zero deps
+<span class="nf-k">STACK</span>   py · js · c++ · rust
+<span class="nf-k">UPTIME</span>  <span id="uptime">…</span>
+<span class="nf-k">STATUS</span>  <span class="nf-ok" data-i18n="nf_status">open to work</span></code></pre>
+  <p class="foot-note" data-i18n="foot_note">Backend &amp; fullstack developer — Python · Django · JavaScript · C++ · Shell.<br>No frameworks were harmed making this site.</p>
 </footer>
 
-<script src="app.js"></script>
+<div class="toast" id="toast" data-i18n="toast_copied">copied ✓</div>
+
+<script src="app.js?v=2"></script>
 </body>
 </html>
