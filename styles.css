@@ -371,11 +371,22 @@ body.has-cursor .cursor{opacity:1}
   .work-grid,.stack-grid,.bento{grid-template-columns:1fr}
   .proj.feat,.b-main,.b-card,.b-stats{grid-column:span 1}
   .nav-links a:not(:nth-last-child(-n+2)){display:none}
+  .nav-links{gap:22px}
+  .nav-links a{font-size:15px;padding:6px 2px}
   .signals{gap:22px 34px}
   .marquee{transform:none;margin:0}
 }
+/* ---- mobile/touch perf: show content immediately, drop costly effects ---- */
+@media (max-width:768px){
+  .reveal{opacity:1;transform:none;transition:none}
+  #field{display:none}
+  .nav{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(10,12,11,.95)}
+}
 @media (hover:none),(pointer:coarse){
   .cursor{display:none}
+  .reveal{opacity:1;transform:none;transition:none}
+  #field{display:none}
+  .nav{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(10,12,11,.95)}
 }
 @media (prefers-reduced-motion:reduce){
   .reveal{opacity:1;transform:none;transition:none}
