@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Maxim Chumakov","alternateName":"k1y0mi","url":"https://k1y0miiii.github.io","email":"mailto:chumakov.mr@gmail.com","jobTitle":"Backend & Fullstack Developer","knowsAbout":["Python","Django","JavaScript","C++","Machine Learning","LLM tooling"],"sameAs":["https://github.com/k1y0miiii","https://t.me/k1y0miiii"]}
+{"@context":"https://schema.org","@type":"Person","name":"Maxim Chumakov","alternateName":"k1y0mi","url":"https://k1y0miiii.github.io","email":"mailto:chumakov.mr@gmail.com","jobTitle":"Backend & Fullstack Developer","knowsAbout":["Python","Django","JavaScript","C++","Machine Learning","LLM tooling"],"sameAs":["https://github.com/k1y0miiii","https://t.me/k1y0mi","https://huggingface.co/k1y0mi"]}
 </script>
 </head>
 <body>
@@ -192,12 +192,16 @@
 
     <div class="work-grid" id="grid">
 
-      <a class="proj feat" data-cat="aiml" href="https://github.com/k1y0miiii/ru-ai-text-detector" target="_blank" rel="noopener">
+      <div class="proj feat" data-cat="aiml">
         <span class="proj-top"><span class="tag tag-aiml">AI/ML</span><span class="lang">Python · PyTorch</span></span>
-        <span class="proj-name">ru-ai-text-detector</span>
+        <span class="proj-name">ru-ai-text-detector <span class="live-badge"><span class="live-dot"></span>live demo</span></span>
         <span class="proj-desc" data-i18n="p_detector">Detects whether Russian text is human-written or LLM-generated. Statistical features (v1) plus fine-tuned ruBert transformers (v2–v4), calibrated to FPR ≤ 3%. Service / CLI / TUI, fully local.</span>
-        <span class="proj-go">→</span>
-      </a>
+        <span class="proj-links">
+          <a class="plink plink-primary" href="https://huggingface.co/spaces/k1y0mi/ru-ai-text-detector" target="_blank" rel="noopener" data-i18n="link_demo">▶ Try the live demo</a>
+          <a class="plink" href="https://huggingface.co/k1y0mi/ru-ai-text-detector" target="_blank" rel="noopener" data-i18n="link_model">Model on HF ↗</a>
+          <a class="plink" href="https://github.com/k1y0miiii/ru-ai-text-detector" target="_blank" rel="noopener" data-i18n="link_source">Source ↗</a>
+        </span>
+      </div>
 
       <a class="proj feat" data-cat="sys" href="https://github.com/k1y0miiii/glyph" target="_blank" rel="noopener">
         <span class="proj-top"><span class="tag tag-sys" data-i18n="f_sys">Systems</span><span class="lang">Rust</span></span>
@@ -266,8 +270,9 @@
       <p class="block-lede" data-i18n="lede_contact">Open to backend and fullstack roles, and to interesting collaborations. The fastest way to reach me is email or Telegram.</p>
       <div class="contact-links">
         <button class="btn btn-primary" id="copyMail" data-mail="chumakov.mr@gmail.com">chumakov.mr@gmail.com <span class="copy-hint" data-i18n="copy_hint">⧉ copy</span></button>
-        <a class="btn" href="https://t.me/k1y0miiii" target="_blank" rel="noopener">Telegram @k1y0miiii</a>
+        <a class="btn" href="https://t.me/k1y0mi" target="_blank" rel="noopener">Telegram @k1y0mi</a>
         <a class="btn" href="https://github.com/k1y0miiii" target="_blank" rel="noopener">GitHub @k1y0miiii</a>
+        <a class="btn" href="https://huggingface.co/k1y0mi" target="_blank" rel="noopener">🤗 HuggingFace</a>
       </div>
     </div>
   </section>
@@ -288,6 +293,6 @@
 
 <div class="toast" id="toast" data-i18n="toast_copied">copied ✓</div>
 
-<script src="app.js?v=3"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>

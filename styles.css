@@ -291,6 +291,23 @@ body.has-cursor .cursor{opacity:1}
 
 .proj.hide{display:none}
 
+/* ---- project links + live badge (featured cards with a demo) ---- */
+.proj-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:6px;position:relative;z-index:1}
+.plink{
+  font-size:12.5px;color:var(--ink);border:1px solid var(--line-2);border-radius:9px;
+  padding:8px 14px;transition:all .18s;white-space:nowrap;
+}
+.plink:hover{border-color:var(--lime);color:var(--lime);transform:translateY(-2px)}
+.plink-primary{background:var(--lime);color:#0a0c0b;border-color:var(--lime);font-weight:700}
+.plink-primary:hover{background:var(--lime-dim);border-color:var(--lime-dim);color:#0a0c0b;box-shadow:0 6px 22px var(--lime-glow)}
+.live-badge{
+  display:inline-flex;align-items:center;gap:6px;vertical-align:middle;margin-left:10px;
+  font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--lime);border:1px solid rgba(198,242,78,.4);border-radius:999px;padding:3px 10px;
+}
+.live-dot{width:6px;height:6px;border-radius:50%;background:var(--lime);animation:pulse 2.4s infinite}
+.proj.feat .proj-links .plink{font-size:13px}
+
 /* ---- inline link + contact ---- */
 .inline-link{color:var(--lime-dim);border-bottom:1px solid rgba(158,197,62,.4);white-space:nowrap}
 .inline-link:hover{color:var(--lime)}
