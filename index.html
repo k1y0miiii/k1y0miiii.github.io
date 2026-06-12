@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>k1y0mi — developer</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0c0b'/%3E%3Ctext x='15' y='23' font-size='20' text-anchor='middle' fill='%23c6f24e' font-family='monospace'%3E&gt;%3C/text%3E%3C/svg%3E">
+<meta name="description" content="k1y0mi — developer across AI/ML, LLM tooling, security and systems. Python & Rust. Selected work, measurable results, honest trade-offs.">
+<meta property="og:title" content="k1y0mi — developer">
+<meta property="og:description" content="ML models, LLM tooling, Rust systems utilities and security projects. Measurable results, honest trade-offs.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://k1y0miiii.github.io">
+<meta name="theme-color" content="#0a0c0b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="#top">k1y0mi<span>/dev</span></a>
+  <nav class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#tokens">Tokens</a>
+    <a href="#stack">Stack</a>
+    <a href="#contact">Contact</a>
+    <a href="https://github.com/k1y0miiii" target="_blank" rel="noopener">GitHub ↗</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow reveal">AI/ML · LLM tooling · security · systems</p>
+    <h1 class="reveal">Sharp tools for<br><span class="hl">models, systems &amp; security.</span></h1>
+    <p class="lede reveal">I'm <b>k1y0mi</b> — a developer who builds ML models, tooling that makes LLMs
+      cheaper to run, systems utilities in Rust, and security projects. I care about
+      measurable results and honest trade-offs, not promises.</p>
+
+    <div class="signals reveal">
+      <div class="sig">
+        <span class="sig-num" data-countup="11" data-suffix="">0</span>
+        <span class="sig-lbl">public repos</span>
+      </div>
+      <div class="sig">
+        <span class="sig-num"><span data-countup="33" data-prefix="−" data-suffix="%">0</span></span>
+        <span class="sig-lbl">tokens with JTF</span>
+      </div>
+      <div class="sig">
+        <span class="sig-num"><span data-countup="8" data-suffix="×">0</span></span>
+        <span class="sig-lbl">cheaper web via glyph</span>
+      </div>
+      <div class="sig">
+        <span class="sig-num">Py<span class="sig-amp">·</span>Rs</span>
+        <span class="sig-lbl">primary languages</span>
+      </div>
+    </div>
+
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary" href="#work">See the work ↓</a>
+      <a class="btn" href="https://github.com/k1y0miiii" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="block">
+    <div class="block-head">
+      <span class="kicker">01 — selected work</span>
+      <h2>Things I've built</h2>
+      <p class="block-lede">A mix of ML, LLM-efficiency tooling, Rust systems work and
+        security. Filter by domain — everything links to source.</p>
+    </div>
+
+    <div class="filters" id="filters" role="tablist">
+      <button class="filt active" data-cat="all" role="tab">All</button>
+      <button class="filt" data-cat="aiml" role="tab">AI/ML</button>
+      <button class="filt" data-cat="llm" role="tab">LLM tooling</button>
+      <button class="filt" data-cat="sec" role="tab">Security</button>
+      <button class="filt" data-cat="sys" role="tab">Systems</button>
+      <button class="filt" data-cat="tools" role="tab">Tools</button>
+    </div>
+
+    <div class="work-grid" id="grid">
+
+      <a class="proj feat" data-cat="aiml" href="https://github.com/k1y0miiii/ru-ai-text-detector" target="_blank" rel="noopener">
+        <span class="proj-top"><span class="tag tag-aiml">AI/ML</span><span class="lang">Python · PyTorch</span></span>
+        <span class="proj-name">ru-ai-text-detector</span>
+        <span class="proj-desc">Detects whether Russian text is human-written or LLM-generated.
+          Statistical features (v1) plus fine-tuned ruBert transformers (v2–v4),
+          calibrated to FPR ≤ 3%. Service / CLI / TUI, fully local.</span>
+        <span class="proj-go">→</span>
+      </a>
+
+      <a class="proj feat" data-cat="sys" href="https://github.com/k1y0miiii/glyph" target="_blank" rel="noopener">
+        <span class="proj-top"><span class="tag tag-sys">Systems</span><span class="lang">Rust</span></span>
+        <span class="proj-name">glyph</span>
+        <span class="proj-desc">A web browser that runs in your terminal. Fetches over HTTP(S),
+          parses HTML with html5ever, applies a subset of CSS, lays it out as text.
+          Tabs, forms, session restore — no JS engine, intentionally fast.</span>
+        <span class="proj-go">→</span>
+      </a>
+
+      <a class="proj" data-cat="llm" href="https://github.com/k1y0miiii/json-token-format" target="_blank" rel="noopener">
+        <span class="proj-top"><span class="tag tag-llm">LLM tooling</span><span class="lang">Python</span></span>
+        <span class="proj-name">json-token-format</span>
+        <span class="proj-desc">JTF — a lossless, compact JSON encoding for LLMs. −33% tokens vs
+          JSON, round-trippable. Builds on the TOON idea.</span>
+        <span class="proj-go">→</span>
+      </a>
+
+      <a class="proj" data-cat="llm" href="https://github.com/k1y0miiii/glyph-mcp" target="_blank" rel="noopener">
+        <span class="proj-top"><span class="tag tag-llm">LLM tooling</span><span class="lang">JavaScript</span></span>
+        <span class="proj-name">glyph-mcp</span>
+        <span class="proj-desc">MCP server giving Claude web search &amp; fetch as plain text,
+          rendered through glyph. Roughly 8× fewer tokens per lookup.</span>
+        <span class="proj-go">→</span>
+      </a>
+
+      <a class="proj" data-cat="llm" href="https://github.com/k1y0miiii/json-token-skill" target="_blank" rel="noopener">
+        <span class="proj-top"><span class="tag tag-llm">LLM tooling</span><span class="lang">Python</span></span>
+        <span class="proj-name">json-token-skill</span>
+        <span class="proj-desc">Claude Code skill + PostToolUse hook: reads JSON as compact
+          JTF automatically, saving tokens. Ships a Cursor rule too.</span>
+        <span class="proj-go">→</span>
+      </a>
+
+      <a class="proj" data-cat="aiml" href="https://github.com/k1y0miiii/ids-nsl-kdd" target="_blank" rel="noopener">
+        <span class="proj-top"><span class="tag tag-aiml">AI/ML</span><span class="lang">Python · diploma</span></span>
+        <span class="proj-name">ids-nsl-kdd</span>
+        <span class="proj-desc">Network intrusion detection on the NSL-KDD benchmark.
+          RandomForest / GradientBoosting / LogReg, binary &amp; multiclass, honest
+          metrics on a hard test split.</span>
+        <span class="proj-go">→</span>
+      </a>
+
+      <a class="proj" data-cat="sec" href="https://github.com/k1y0miiii/GhostVault-Open-Source-Anonymous-Messenger" target="_blank" rel="noopener">
+        <span class="proj-top"><span class="tag tag-sec">Security</span><span class="lang">Python</span></span>
+        <span class="proj-name">GhostVault</span>
+        <span class="proj-desc">Open-source anonymous messenger: encrypted chat, shared
+          database access, desktop GUI. Built around user control over data.</span>
+        <span class="proj-go">→</span>
+      </a>
+
+      <a class="proj" data-cat="sec" href="https://github.com/k1y0miiii/FlipperZero-BadUSB-Scripts" target="_blank" rel="noopener">
+        <span class="proj-top"><span class="tag tag-sec">Security</span><span class="lang">DuckyScript</span></span>
+        <span class="proj-name">FlipperZero-BadUSB-Scripts</span>
+        <span class="proj-desc">BadUSB scripts for Flipper Zero — utilities and demos for
+          security testing and automation. For legal, ethical use only.</span>
+        <span class="proj-go">→</span>
+      </a>
+
+      <a class="proj" data-cat="tools" href="https://github.com/k1y0miiii/Fake-data-gen" target="_blank" rel="noopener">
+        <span class="proj-top"><span class="tag tag-tools">Tools</span><span class="lang">Python</span></span>
+        <span class="proj-name">Fake-data-gen</span>
+        <span class="proj-desc">Synthetic / test-data generator built on Faker, with a
+          multilingual UI and a stylish CLI banner.</span>
+        <span class="proj-go">→</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- TOKENS -->
+  <section id="tokens" class="block alt">
+    <div class="block-head">
+      <span class="kicker">02 — a through-line</span>
+      <h2>Making LLMs cheaper to run</h2>
+      <p class="block-lede">A chunk of my work is one idea: feed the model the same
+        information for fewer tokens. Fewer tokens means lower cost, less latency, more
+        room in the context window. Measured, not promised.</p>
+    </div>
+
+    <div class="token-band">
+      <div class="tb-card">
+        <span class="tb-tag">JSON → JTF</span>
+        <div class="tb-num"><span data-countup="33" data-prefix="−" data-suffix="%">0</span></div>
+        <span class="tb-sub">tiktoken tokens vs compact JSON, across 6 typical files. Lossless.</span>
+      </div>
+      <div class="tb-card">
+        <span class="tb-tag">web → clean text</span>
+        <div class="tb-num"><span data-countup="8" data-suffix="×">0</span></div>
+        <span class="tb-sub">fewer tokens per web search — pages rendered as plain text via glyph.</span>
+      </div>
+      <div class="tb-cta">
+        <p>Live benchmarks, the JTF spec and the honest cases where it doesn't win:</p>
+        <a class="btn btn-primary" href="https://k1y0miiii.github.io/token-economics/" target="_blank" rel="noopener">Open token-economics ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="block">
+    <div class="block-head">
+      <span class="kicker">03 — toolbox</span>
+      <h2>Stack &amp; focus</h2>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-card reveal">
+        <h3>Languages</h3>
+        <ul class="chips">
+          <li>Python</li><li>Rust</li><li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="stack-card reveal">
+        <h3>AI / ML</h3>
+        <ul class="chips">
+          <li>PyTorch</li><li>transformers</li><li>scikit-learn</li>
+        </ul>
+      </div>
+      <div class="stack-card reveal">
+        <h3>Backend &amp; infra</h3>
+        <ul class="chips">
+          <li>FastAPI</li><li>PostgreSQL</li><li>Docker</li><li>Git</li>
+        </ul>
+      </div>
+      <div class="stack-card reveal">
+        <h3>Focus areas</h3>
+        <ul class="chips">
+          <li>LLM tooling</li><li>security</li><li>backend</li><li>systems</li>
+        </ul>
+      </div>
+    </div>
+    <p class="honest">Some projects and their docs are in Russian — that's the target
+      audience. Every repo also ships an English README by default.</p>
+  </section>
+
+</main>
+
+<footer id="contact" class="foot">
+  <div class="foot-l">
+    <span class="brand">k1y0mi</span>
+    <p>Developer — AI/ML · security · backend · systems. Python &amp; Rust.</p>
+  </div>
+  <div class="foot-r">
+    <a href="mailto:chumakov.mr@gmail.com">chumakov.mr@gmail.com</a>
+    <a href="https://t.me/k1y0miiii" target="_blank" rel="noopener">Telegram @k1y0miiii</a>
+    <a href="https://github.com/k1y0miiii" target="_blank" rel="noopener">GitHub @k1y0miiii</a>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
