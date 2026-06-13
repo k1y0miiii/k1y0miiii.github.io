@@ -239,7 +239,7 @@
         if (p.y < -20) { p.y = H + 20; p.x = Math.random() * W; }
         const wob = Math.sin(t / 2600 + p.ph) * 6;
         ctx.globalAlpha = p.a;
-        ctx.fillStyle = p.lime ? '#c6f24e' : '#e9ede4';
+        ctx.fillStyle = p.lime ? '#34E7FF' : '#F4F6F7';
         ctx.font = p.s + 'px "JetBrains Mono", monospace';
         ctx.fillText(p.g, p.x + wob + px * p.d, p.y);
       }
@@ -295,7 +295,7 @@
       hudFill.style.width = pct + '%';
       hudPct.textContent = pct + '%';
       hudTok.textContent = (Math.round(p * 148) * 100).toLocaleString('en-US') + ' tok';
-      hudPct.style.color = pct >= 99 ? '#c6f24e' : '';
+      hudPct.style.color = pct >= 99 ? '#34E7FF' : '';
       ticking = false;
     }
     window.addEventListener('scroll', () => {
