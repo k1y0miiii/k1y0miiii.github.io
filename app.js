@@ -32,8 +32,8 @@
       lede_work: 'A sample of what I’ve built, as evidence for the above. Filter by domain — everything links to source. <a class="inline-link" href="https://github.com/k1y0miiii" target="_blank" rel="noopener">Full list on GitHub →</a>',
       f_all: 'All', f_sec: 'Security', f_sys: 'Systems', f_tools: 'Tools', f_llm: 'LLM tooling',
       live_playground: 'live playground',
-      link_demo: '▶ Try the live demo', link_model: 'Model on HF ↗', link_source: 'Source ↗',
-      link_playground: '▶ Try the playground',
+      link_demo: '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg> Try the live demo', link_model: 'Model on HF ↗', link_source: 'Source ↗',
+      link_playground: '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg> Try the playground',
       p_tokendiet: 'See what your JSON costs in tokens and dollars across models — then put it on a diet. A live playground backed by a reproducible benchmark (JTF cuts ~40% losslessly).',
       l_diploma: 'Python · diploma',
       p_detector: 'Detects whether Russian text is human-written or LLM-generated. Statistical features (v1) plus fine-tuned ruBert transformers (v2–v4), calibrated to FPR ≤ 3%. Service / CLI / TUI, fully local.',
@@ -48,7 +48,7 @@
       k_contact: 'contact', h_contact: 'Let’s talk.',
       lede_contact: 'Open to backend and fullstack roles, and to interesting collaborations. The fastest way to reach me is email or Telegram.',
       resume_head: 'download résumé', resume_en_note: 'global / relocation', resume_ru_note: 'Russian market',
-      copy_hint: '⧉ copy', toast_copied: 'copied ✓',
+      copy_hint: '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg> copy', toast_copied: 'copied <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 13 9 17 19 6"/></svg>',
       nf_status: 'open to work',
       foot_note: 'Backend &amp; fullstack developer — Python · Django · JavaScript · C++ · Shell.<br>No frameworks were harmed making this site.'
     },
@@ -77,8 +77,8 @@
       lede_work: 'Часть того, что я построил — как доказательство сказанного выше. Фильтруй по направлению — всё ведёт на исходники. <a class="inline-link" href="https://github.com/k1y0miiii" target="_blank" rel="noopener">Полный список на GitHub →</a>',
       f_all: 'Все', f_sec: 'Безопасность', f_sys: 'Системы', f_tools: 'Инструменты', f_llm: 'LLM-тулинг',
       live_playground: 'живое демо',
-      link_demo: '▶ Открыть демо', link_model: 'Модель на HF ↗', link_source: 'Исходники ↗',
-      link_playground: '▶ Открыть плейграунд',
+      link_demo: '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg> Открыть демо', link_model: 'Модель на HF ↗', link_source: 'Исходники ↗',
+      link_playground: '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg> Открыть плейграунд',
       p_tokendiet: 'Смотри, во сколько токенов и долларов обходится твой JSON по разным моделям — и посади его на диету. Живой плейграунд на воспроизводимом бенчмарке (JTF режет ~40% без потерь).',
       l_diploma: 'Python · диплом',
       p_detector: 'Определяет, кто написал русский текст — человек или LLM. Статистические признаки (v1) плюс файнтюн ruBert (v2–v4), калибровка до FPR ≤ 3%. Сервис / CLI / TUI, полностью локально.',
@@ -93,7 +93,7 @@
       k_contact: 'контакты', h_contact: 'Поговорим.',
       lede_contact: 'Открыт к бэкенд- и фуллстек-вакансиям и интересным совместным проектам. Быстрее всего — почта или Telegram.',
       resume_head: 'скачать резюме', resume_en_note: 'зарубежный рынок', resume_ru_note: 'рынок РФ',
-      copy_hint: '⧉ копировать', toast_copied: 'скопировано ✓',
+      copy_hint: '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg> копировать', toast_copied: 'скопировано <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 13 9 17 19 6"/></svg>',
       nf_status: 'открыт к работе',
       foot_note: 'Бэкенд- и фуллстек-разработчик — Python · Django · JavaScript · C++ · Shell.<br>При создании сайта ни один фреймворк не пострадал.'
     }
@@ -334,6 +334,10 @@
   const up = document.getElementById('uptime');
   if (up) {
     const days = Math.floor((Date.now() - new Date('2026-06-12T00:00:00Z')) / 864e5);
-    up.textContent = days < 1 ? 'fresh deploy ⚡' : days + 'd';
+    if (days < 1) {
+      up.innerHTML = 'fresh deploy <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 4 14 11 14 10 22 19 9 12 9 13 2"/></svg>';
+    } else {
+      up.textContent = days + 'd';
+    }
   }
 })();
