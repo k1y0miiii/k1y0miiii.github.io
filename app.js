@@ -12,7 +12,7 @@
       nav_about: 'About', nav_skills: 'Skills', nav_work: 'Work', nav_contact: 'Contact',
       hero_l1: 'Backend developer', hero_l2: 'who went', hero_hl: 'fullstack.',
       hero_lede: 'I’m <b>Maxim Chumakov</b> — <b>k1y0mi</b> on the internet. Python and <b>Django</b> are home base: APIs, data, business logic. Over the past year I’ve worked <b>fullstack</b>, owning features end to end, UI included. On the side I build ML models, LLM tooling and systems software — and I like shipping results I can measure.',
-      cta_touch: 'Get in touch', cta_work: 'See the work ↓', cta_gh: 'Full profile ↗',
+      cta_touch: 'Get in touch', cta_cv: 'Download CV ↓', cta_work: 'See the work ↓', cta_gh: 'Full profile ↗',
       sig_1: 'fullstack, end to end', sig_2: 'public projects shipped',
       sig_3: 'tokens cut (JTF)', sig_4: 'cheaper web lookups (MCP)',
       k_about: 'about', h_about: 'What I do',
@@ -44,6 +44,7 @@
       p_fdg: 'Synthetic / test-data generator built on Faker, with a multilingual UI and a stylish CLI banner.',
       k_contact: 'contact', h_contact: 'Let’s talk.',
       lede_contact: 'Open to backend and fullstack roles, and to interesting collaborations. The fastest way to reach me is email or Telegram.',
+      resume_head: 'download résumé', resume_en_note: 'global / relocation', resume_ru_note: 'Russian market',
       copy_hint: '⧉ copy', toast_copied: 'copied ✓',
       nf_status: 'open to work',
       foot_note: 'Backend &amp; fullstack developer — Python · Django · JavaScript · C++ · Shell.<br>No frameworks were harmed making this site.'
@@ -53,7 +54,7 @@
       nav_about: 'Обо мне', nav_skills: 'Стек', nav_work: 'Проекты', nav_contact: 'Контакты',
       hero_l1: 'Backend-разработчик,', hero_l2: 'который вырос в', hero_hl: 'фуллстек.',
       hero_lede: 'Я <b>Максим Чумаков</b>, в сети — <b>k1y0mi</b>. Моя база — Python и <b>Django</b>: API, данные, бизнес-логика. Последний год работаю <b>фуллстеком</b> — веду фичи целиком, вместе с интерфейсом. Параллельно делаю ML-модели, LLM-тулинг и системный софт — и люблю результат, который можно измерить.',
-      cta_touch: 'Написать мне', cta_work: 'Смотреть работы ↓', cta_gh: 'Полный профиль ↗',
+      cta_touch: 'Написать мне', cta_cv: 'Скачать резюме ↓', cta_work: 'Смотреть работы ↓', cta_gh: 'Полный профиль ↗',
       sig_1: 'фуллстек, от и до', sig_2: 'публичных проектов',
       sig_3: 'срезано токенов (JTF)', sig_4: 'дешевле веб-запросов (MCP)',
       k_about: 'обо мне', h_about: 'Чем я занимаюсь',
@@ -85,6 +86,7 @@
       p_fdg: 'Генератор синтетических / тестовых данных на базе Faker — мультиязычный UI и стильный CLI-баннер.',
       k_contact: 'контакты', h_contact: 'Поговорим.',
       lede_contact: 'Открыт к бэкенд- и фуллстек-вакансиям и интересным совместным проектам. Быстрее всего — почта или Telegram.',
+      resume_head: 'скачать резюме', resume_en_note: 'зарубежный рынок', resume_ru_note: 'рынок РФ',
       copy_hint: '⧉ копировать', toast_copied: 'скопировано ✓',
       nf_status: 'открыт к работе',
       foot_note: 'Бэкенд- и фуллстек-разработчик — Python · Django · JavaScript · C++ · Shell.<br>При создании сайта ни один фреймворк не пострадал.'

@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=5">
+<link rel="stylesheet" href="styles.css?v=7">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Maxim Chumakov","alternateName":"k1y0mi","url":"https://k1y0miiii.github.io","email":"mailto:chumakov.mr@gmail.com","jobTitle":"Backend & Fullstack Developer","knowsAbout":["Python","Django","JavaScript","C++","Machine Learning","LLM tooling"],"sameAs":["https://github.com/k1y0miiii","https://t.me/k1y0mi","https://huggingface.co/k1y0mi"]}
 </script>
@@ -62,6 +62,7 @@
 
     <div class="hero-cta reveal">
       <a class="btn btn-primary" href="mailto:chumakov.mr@gmail.com" data-i18n="cta_touch">Get in touch</a>
+      <a class="btn" id="cvHero" href="#resume" data-i18n="cta_cv">Download CV ↓</a>
       <a class="btn" href="#work" data-i18n="cta_work">See the work ↓</a>
       <a class="btn" href="https://github.com/k1y0miiii" target="_blank" rel="noopener" data-i18n="cta_gh">Full profile ↗</a>
     </div>
@@ -274,6 +275,26 @@
         <a class="btn" href="https://github.com/k1y0miiii" target="_blank" rel="noopener">GitHub @k1y0miiii</a>
         <a class="btn" href="https://huggingface.co/k1y0mi" target="_blank" rel="noopener">Hugging Face @k1y0mi</a>
       </div>
+
+      <div class="resume" id="resume">
+        <span class="resume-head"><i>❯</i> <span data-i18n="resume_head">download résumé</span></span>
+        <div class="resume-grid">
+          <div class="resume-row">
+            <span class="resume-lang">EN <em data-i18n="resume_en_note">global / relocation</em></span>
+            <span class="resume-files">
+              <a class="plink plink-primary" href="cv/Maxim-Chumakov-CV-EN.pdf" download>PDF&nbsp;↓</a>
+              <a class="plink" href="cv/Maxim-Chumakov-CV-EN.docx" download>DOCX</a>
+            </span>
+          </div>
+          <div class="resume-row">
+            <span class="resume-lang">RU <em data-i18n="resume_ru_note">рынок РФ</em></span>
+            <span class="resume-files">
+              <a class="plink plink-primary" href="cv/Maxim-Chumakov-Resume-RU.pdf" download>PDF&nbsp;↓</a>
+              <a class="plink" href="cv/Maxim-Chumakov-Resume-RU.docx" download>DOCX</a>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -293,6 +314,6 @@
 
 <div class="toast" id="toast" data-i18n="toast_copied">copied ✓</div>
 
-<script src="app.js?v=4"></script>
+<script src="app.js?v=6"></script>
 </body>
 </html>
